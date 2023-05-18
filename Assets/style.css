@@ -1,0 +1,32 @@
+.container{
+    margin-top: 10px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid black;
+}
+.search-bar{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.search-bar>input{
+    width: 150px;
+    height: 20px;
+    border-radius: 7px;
+}
+.search-bar>span{
+    font-weight: bolder;
+    font-size: larger;
+}
+.search{
+    width: 60px;
+    height: 20px;
+}
+.myIcon{
+    width: 70px;
+    height: 40px;
+    object-fit: cover;
+}
