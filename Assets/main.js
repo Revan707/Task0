@@ -46,16 +46,20 @@ function renderWeather(weather){
     }
 
     const nameSpan=document.createElement("span")
-    nameSpan.innerText=`Name: ${name}`
+    nameSpan.innerText=name
+    nameSpan.className="name"
 
     const countrySpan=document.createElement("span")
-    countrySpan.innerText=`Country: ${country}`
+    countrySpan.innerText=country
+    countrySpan.className="country"
 
     const localTimeSpan=document.createElement("span")
-    localTimeSpan.innerText=`Localtime: ${localtime.slice(10)}`
+    localTimeSpan.innerText=localtime.slice(10)
+    localTimeSpan.className="time"
 
     const temperatureSpan=document.createElement("span")
-    temperatureSpan.innerText=`Temp_c: ${temperature} °C`
+    temperatureSpan.innerText=temperature +"°C"
+    temperatureSpan.className="temp"
 
     const _icon=document.createElement("img")
     _icon.className="myIcon"
@@ -63,20 +67,24 @@ function renderWeather(weather){
 
     const windspeedSpan=document.createElement("span")
     windspeedSpan.innerText=`Wind_kph: ${windSpeed} km/h`
+    windspeedSpan.className="windSpeed"
 
     const humiditySpan=document.createElement("span")
     humiditySpan.innerText=`Humidity: ${humidity} %`
+    humiditySpan.className="humidity"
 
     const feelslikeSpan=document.createElement("span")
     feelslikeSpan.innerText=`Feelslike: ${feelsLike} °C`
+    feelslikeSpan.className="feelsLike"
 
     const uvindexSpan=document.createElement("span")
     uvindexSpan.innerText=`Uv: ${uvIndex}`
+    uvindexSpan.className="uvIndex"
 
 
-    container.appendChild(nameSpan)
     container.appendChild(countrySpan)
     container.appendChild(localTimeSpan)
+    container.appendChild(nameSpan)
     container.appendChild(temperatureSpan)
     container.appendChild(_icon)
     container.appendChild(windspeedSpan)
